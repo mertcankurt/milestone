@@ -9,9 +9,9 @@ from zeep.cache import SqliteCache
 from requests.auth import HTTPBasicAuth
 from zeep.wsse.username import UsernameToken
 import socket
-from XMLManager import *
-from SOAPManager import *
-from LiveVideoProcessing import *
+from src.managers.XMLManager import *
+from src.managers.SOAPManager import *
+from src.videoprocess.LiveVideoProcessing import *
     
 clientTCP = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 maxBufferSize = 8*1024

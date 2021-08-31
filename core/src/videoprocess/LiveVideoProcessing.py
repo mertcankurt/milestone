@@ -1,7 +1,6 @@
-from LiveVideoHeaderParser import *
+from src.videoprocess.LiveVideoHeaderParser import *
 import cv2
 import numpy as np
-from XMLMessages import *
 
 def process_Video(clientTCP, liveVideoFrameQueue, maxBufferSize):
     while True:

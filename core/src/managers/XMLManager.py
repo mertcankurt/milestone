@@ -1,9 +1,8 @@
 import queue
 import threading
-from LiveVideoProcessing import *
+from src.videoprocess.LiveVideoProcessing import *
 import time
-from XMLMessages import *
-from flaskvideoserver import *
+from src.videoprocess.flaskvideoserver import *
 from src.xml.MilestoneConnectToCameraMessage import MilestoneConnectToCameraMessage
 from src.xml.MilestoneGetAlarmListMessage import MilestoneGetAlarmListMessage
 from src.xml.MilestoneGetLiveVideoMessage import MilestoneGetLiveVideoMessage

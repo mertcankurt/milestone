@@ -12,7 +12,11 @@ import socket
 from src.managers.XMLManager import *
 from src.managers.SOAPManager import *
 from src.videoprocess.LiveVideoProcessing import *
-    
+from gevent import monkey
+
+# need to patch sockets to make requests async
+monkey.patch_all(ssl=False)
+
 clientTCP = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 maxBufferSize = 8*1024
 

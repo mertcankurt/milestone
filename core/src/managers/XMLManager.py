@@ -44,4 +44,5 @@ def sendGetLiveVideoMessage(clientTCP, maxBufferSize):
 
     app = FlaskVideoServer(liveVideoFrameQueue).getFlaskApp()
     app.run(host='localhost',port=9000 , threaded=True, debug=False)
+    # http.serve_forever()
 
